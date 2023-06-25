@@ -1,0 +1,13 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname args-pkt) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#!/usr/local/guile -s
+#!/usr/bin/racket
+
+(define test-silence 'silence?);; boolean? void? silence? any/c
+(define matrix? 'array);; Boolean arr : (Array A)
+(define vector-immutable 'v);; (and/c vector? immutable?) v : any/c
+(define vector-length 'vec);; exact-nonnegative-integer? vec : vector?
+(define vector-ref 'vec, pos);; any/c vec : vector? pos : exact-nonnegative-integer?
+
+

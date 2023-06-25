@@ -1,0 +1,9 @@
+#!/usr/local/bin/guile -s
+#!/usr/bin/racket
+!#
+(define (main args)
+        (map (lambda (arg) (display arg) (display " "))
+             (cdr args))
+             (newline)
+
+
