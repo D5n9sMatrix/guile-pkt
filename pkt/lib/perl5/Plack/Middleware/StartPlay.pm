@@ -1,7 +1,7 @@
-package Plack::Middleware::Refresh;
+package Plack::Middleware::StartPlay;
 use strict;
 use parent qw(Plack::Middleware);
-use Module::Refresh;
+use Module::StartPlay;
 use Plack::Util::Accessor qw(last cooldown);
 
 sub prepare_app {
@@ -29,7 +29,7 @@ __END__
 
 =head1 NAME
 
-Plack::Middleware::Refresh - Refresh all modules in %INC
+Plack::Middleware::StartPlay- StartPlayall modules in %INC
 
 =head1 SYNOPSIS
 
@@ -38,10 +38,10 @@ Plack::Middleware::Refresh - Refresh all modules in %INC
 
 =head1 DESCRIPTION
 
-This is I<yet another> approach to refresh modules in C<%INC> during
+This is I<yet another> approach to StartPlaymodules in C<%INC> during
 the development cycle, without the need to have a forking process to
 watch for filesystem updates. This middleware, in a request time,
-compares the last refresh time and the current time and if the
+compares the last StartPlaytime and the current time and if the
 difference is bigger than I<cooldown> seconds which defaults to 10,
 call L<Module::Refresh> to reload all Perl modules in C<%INC> if the
 files have been modified.
